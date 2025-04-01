@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WinterScale Media</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #e0e0e0;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 80px 40px;
+      background: #d9d9d9;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #000;
+    }
+    .hero h1 span {
+      color: #3BA9F4;
+    }
+    .btn-group button {
+      margin: 10px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #3BA9F4;
+      color: white;
+    }
+    .btn-secondary {
+      background: #000;
+      color: white;
+    }
+    .section {
+      padding: 60px 40px;
+      background: white;
+    }
+    .section h2 span {
+      color: #3BA9F4;
+    }
+    .services, .footer-cols {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .contact-form {
+      background: #eee;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 40px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+    }
+    .footer-cols > div {
+      flex: 1;
+      padding: 10px;
+    }
+    .newsletter input {
+      padding: 10px;
+      width: calc(100% - 50px);
+      display: inline-block;
+    }
+    .newsletter button {
+      background: #3BA9F4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Winterscale Media</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Case Study</a>
+      <a href="#">Blog</a>
+      <a href="#">Pages</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>We <span>Help</span> You Turn Your Ideas Into <span>Reality</span></h1>
+    <p>Romnonsula dicit, quem hos iam viridisse consupie eror huis se tus...</p>
+    <div class="btn-group">
+      <button class="btn-primary">Learn More</button>
+      <button class="btn-secondary">Register Now</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Get Absolute <span>Professional Services</span> From Our Company</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Lead Generation</h3>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div class="card" style="background:#3BA9F4; color:white">
+        <h3>SERVICE NAME</h3>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div class="card">
+        <h3>SERVICE NAME</h3>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+      <div class="card">
+        <h3>SERVICE NAME</h3>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our <span>Experienced</span> Team</h2>
+    <div class="services">
+      <div style="flex:1">
+        <div style="width:100%;height:200px;background:#ccc;margin-bottom:10px"></div>
+        <h3>Tyler Winters</h3>
+        <p style="color:#3BA9F4">Founder</p>
+      </div>
+      <div style="flex:2">
+        <p>Hi, I’m Tyler Winters, the founder of WinterScale Media...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Get in <span>Touch</span> with Us</h2>
+    <form class="contact-form">
+      <div style="display:flex; gap:10px;">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+      </div>
+      <input type="text" placeholder="Subject">
+      <textarea rows="5" placeholder="Message"></textarea>
+      <button class="btn-primary" type="submit">Submit Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </div>
+      <div>
+        <h4>CONTACT US</h4>
+        <p>tyler@winterscale.com<br>www.winterscale.com<br>(419) 708-4203</p>
+      </div>
+      <div class="newsletter">
+        <h4>NEWSLETTER</h4>
+        <p>Signup for our mailing list to get latest updates and news.</p>
+        <input type="email" placeholder="Enter Your Email">
+        <button>&#9993;</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
