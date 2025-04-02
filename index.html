@@ -1189,90 +1189,26 @@ $(function() {
         <div data-aos="slide-up" data-aos-offset="120" data-aos-delay="50" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true" class="sb-section-subtitle sb-section-alignable" data-component-field="subtitle" data-sb-field="text" data-sb-is-link="" data-sb-type="text" data-sb-uuid="a5aaf0a9-6dbf-4918-bace-0ff942d00801">We're here to help you grow.</div>
         <div data-aos="slide-up" data-aos-offset="120" data-aos-delay="100" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true" class="sb-paragraph sb-section-alignable" data-component-field="paragraph" data-sb-field="text" data-sb-is-link="" data-sb-type="rich-text" data-sb-uuid="a210770b-fa6b-41ea-8717-6c73adede1d9"><p></p></div>
 
-        <form data-aos="slide-up" data-aos-offset="120" data-aos-delay="0" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true" class="form js-form" data-recaptcha-version="1" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" data-semantic-tag-blueprint="contact-form-form" data-send-type="ajax" id="UL_FORM_4df2ad94-632b-4417-8edd-1450ab7f66ae">
-          
-          
-          
-          
-            
-              
-                
-                <div data-is-required="true" class="form__group  form__group--required ">
-                  
-                    <label class="form__label contact-form__label" data-component-field="field" data-sb-field="custom_fields" data-sb-is-link="" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" for="unique_id_2-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d">Name <span class="form__label-required" title="This field is required">*</span></label>
-                  
+        <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
 
-                  
-                    <input required="" class="form__input contact-form__input" data-sb-field="custom_fields" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" id="unique_id_2-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d" name="name" placeholder="Jane Smith" type="text" value="">
-                  
-                </div>
-              
-            
-              
-                
-                <div data-is-required="true" class="form__group  form__group--required ">
-                  
-                    <label class="form__label contact-form__label" data-component-field="field" data-sb-field="custom_fields" data-sb-is-link="" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" for="unique_id_1-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d">Email address <span class="form__label-required" title="This field is required">*</span></label>
-                  
+  <label for="email">Email address *</label>
+  <input type="email" name="email" id="email" required>
 
-                  
-                    <input required="" class="form__input contact-form__input" data-sb-field="custom_fields" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" id="unique_id_1-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d" name="from_email" placeholder="email@website.com" type="email" value="">
-                  
-                </div>
-              
-            
-              
-                
-                <div data-is-required="true" class="form__group  form__group--required ">
-                  
-                    <label class="form__label contact-form__label" data-component-field="field" data-sb-field="custom_fields" data-sb-is-link="" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" for="unique_id_3-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d">Phone number <span class="form__label-required" title="This field is required">*</span></label>
-                  
+  <label for="phone">Phone number *</label>
+  <input type="tel" name="phone" id="phone" required>
 
-                  
-                    <input required="" class="form__input contact-form__input" data-sb-field="custom_fields" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" id="unique_id_3-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d" name="from_phone" placeholder="555-555-5555" type="tel" value="">
-                  
-                </div>
-              
-            
-              
-                
-                <div class="form__group   ">
-                  
-                    <label class="form__label contact-form__label" data-component-field="field" data-sb-field="custom_fields" data-sb-is-link="" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" for="unique_id_4-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d">Message </label>
-                  
+  <label for="message">Message</label>
+  <textarea name="message" id="message"></textarea>
 
-                  
-                    <textarea class="form__input form__input--textarea contact-form__textarea" data-sb-field="custom_fields" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" id="unique_id_4-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d" name="message" placeholder="" rows="4"></textarea>
-                  
-                </div>
-              
-            
-              
-                
-                <div data-is-required="true" class="form__group form__group--checkbox form__group--required ">
-                  
+  <label>
+    <input type="checkbox" name="consent" required>
+    I allow this website to store my submission so they can respond to my inquiry.
+  </label>
 
-                  
-                    <div class="form__checkbox-error" id="checkbox-error-message-gdpr_consent-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d">
-                      Please select at least one option.
-                    </div>
-                    
-                    
-                      <div class="form__input-checkbox-wrapper">
-<input class="form__input form__input--checkbox" id="3e040677-855d-47d0-a6c5-972b2d518a3d-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d" name="I allow this website to store my submission so they can respond to my inquiry." type="checkbox" value="Checked">
-<label class="form__label contact-form__label " data-component-field="checkbox" data-sb-field="custom_fields" data-sb-is-link="" data-sb-type="contact_form" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" for="3e040677-855d-47d0-a6c5-972b2d518a3d-d47bbc5c-6523-4ba5-aa75-3f2ea88cfa1d">
-                          I allow this website to store my submission so they can respond to my inquiry. <span class="form__label-required" title="This field is required">*</span>
-                        </label>
-</div>
-                    
-                  
-                </div>
-              
-            
-          
-          
-          <button class="sb-button sb-button--form contact-form__btn" data-component-field="form_details" data-sb-field="button_label" data-sb-is-link="" data-sb-type="text" data-sb-uuid="9c786f0c-ba97-4b7e-822d-3e32036f131c" type="submit">Submit</button>
+  <button type="submit">SUBMIT</button>
 </form>
+
 <div class="b12-form-error">
           Sorry, we were not able to submit the form. Please review the errors and try again.
         </div>
