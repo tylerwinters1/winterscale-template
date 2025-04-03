@@ -1189,25 +1189,50 @@ $(function() {
         <div data-aos="slide-up" data-aos-offset="120" data-aos-delay="50" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true" class="sb-section-subtitle sb-section-alignable" data-component-field="subtitle" data-sb-field="text" data-sb-is-link="" data-sb-type="text" data-sb-uuid="a5aaf0a9-6dbf-4918-bace-0ff942d00801">We're here to help you grow.</div>
         <div data-aos="slide-up" data-aos-offset="120" data-aos-delay="100" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true" class="sb-paragraph sb-section-alignable" data-component-field="paragraph" data-sb-field="text" data-sb-is-link="" data-sb-type="rich-text" data-sb-uuid="a210770b-fa6b-41ea-8717-6c73adede1d9"><p></p></div>
 
-        <form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact">
+        <form name="contact" netlify>
+  <input type="hidden" name="form-name" value="contact" />
 
-  <label for="email">Email address *</label>
-  <input type="email" name="email" id="email" required>
+  <p>
+    <label>
+      Name <br />
+      <input type="text" name="name" placeholder="Jane Smith" required />
+    </label>
+  </p>
 
-  <label for="phone">Phone number *</label>
-  <input type="tel" name="phone" id="phone" required>
+  <p>
+    <label>
+      Email address <br />
+      <input type="email" name="from_email" placeholder="email@website.com" required />
+    </label>
+  </p>
 
-  <label for="message">Message</label>
-  <textarea name="message" id="message"></textarea>
+  <p>
+    <label>
+      Phone number <br />
+      <input type="tel" name="from_phone" placeholder="555-555-5555" required />
+    </label>
+  </p>
 
-  <label>
-    <input type="checkbox" name="consent" required>
-    I allow this website to store my submission so they can respond to my inquiry.
-  </label>
+  <p>
+    <label>
+      Message <br />
+      <textarea name="message" rows="4"></textarea>
+    </label>
+  </p>
 
-  <button type="submit">SUBMIT</button>
+  <p>
+    <label>
+      <input type="checkbox" name="consent" required />
+      I allow this website to store my submission so they can respond to my inquiry.
+    </label>
+  </p>
+
+  <p>
+    <button type="submit">Submit</button>
+  </p>
 </form>
+
+
 
 <div class="b12-form-error">
           Sorry, we were not able to submit the form. Please review the errors and try again.
