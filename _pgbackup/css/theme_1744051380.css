@@ -71,10 +71,3 @@ a.sb-button {
 .sb-link sb-button sb-button--nav:hover svg path {
     fill: #007acc !important; /* Same color or different if you want */
   }
-.sb-link sb-nav__link:hover {
-    color: #007acc !important; /* Replace with your desired hover color */
-  }
-  
-.sb-link sb-nav__link:hover svg path {
-    fill: #007acc !important; /* Same color or different if you want */
-  }
