@@ -12,8 +12,8 @@ export function Testimonials() {
                 JD
               </div>
               <div>
-                <h4 className="font-semibold">Client Name</h4>
-                <p className="text-sm text-gray-500">Company Name</p>
+                <h4 className="font-semibold">Jordan Daniels</h4>
+                <p className="text-sm text-gray-500">JD Home Solutions</p>
               </div>
             </div>
             <p className="text-gray-600">
@@ -29,8 +29,8 @@ export function Testimonials() {
                 AS
               </div>
               <div>
-                <h4 className="font-semibold">Client Name</h4>
-                <p className="text-sm text-gray-500">Company Name</p>
+                <h4 className="font-semibold">Alicia Sanchez</h4>
+                <p className="text-sm text-gray-500">SanBeauty Boutique</p>
               </div>
             </div>
             <p className="text-gray-600">
@@ -46,8 +46,8 @@ export function Testimonials() {
                 MK
               </div>
               <div>
-                <h4 className="font-semibold">Client Name</h4>
-                <p className="text-sm text-gray-500">Company Name</p>
+                <h4 className="font-semibold">Marcus King</h4>
+                <p className="text-sm text-gray-500">Omega Tires and Brakes</p>
               </div>
             </div>
             <p className="text-gray-600">
