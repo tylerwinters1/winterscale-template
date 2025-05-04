@@ -51,11 +51,6 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                   Process
                 </Link>
               </li>
@@ -71,13 +66,13 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="mailto:hello@winterscalemedia.com" className="hover:text-white transition-colors">
+                <a href="mailto:tyler@winterscalemedia.com" className="hover:text-white transition-colors">
                   hello@winterscalemedia.com
                 </a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="hover:text-white transition-colors">
-                  (123) 456-7890
+                <a href="tel:+4197084203" className="hover:text-white transition-colors">
+                  (419) 708-4203
                 </a>
               </li>
             </ul>
