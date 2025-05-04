@@ -67,7 +67,7 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a href="mailto:tyler@winterscalemedia.com" className="hover:text-white transition-colors">
-                  hello@winterscalemedia.com
+                  tyler@winterscalemedia.com
                 </a>
               </li>
               <li>
