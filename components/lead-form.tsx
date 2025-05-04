@@ -8,25 +8,28 @@ export function LeadForm() {
   const [isSuccess, setIsSuccess] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
     setIsSubmitting(true)
     setError(null)
-
+  
+    const formData = new FormData(e.currentTarget)
+  
     try {
-      // Call the server action to submit the form
-      const result = await submitLeadForm(formData)
-
-      if (result.success) {
+      const res = await fetch("https://hook.us2.make.com/1ebg3bklfr19mzbmbc7pfhizjdgjg2tz", {
+        method: "POST",
+        body: formData,
+      })
+  
+      if (res.ok) {
         setIsSuccess(true)
-        // Reset form
-        const form = document.getElementById("lead-form") as HTMLFormElement
-        form?.reset()
+        e.currentTarget.reset()
       } else {
-        setError(result.message || "Something went wrong. Please try again.")
+        setError("Something went wrong. Please try again.")
       }
     } catch (err) {
-      setError("An unexpected error occurred. Please try again.")
       console.error(err)
+      setError("An unexpected error occurred. Please try again.")
     } finally {
       setIsSubmitting(false)
     }
@@ -65,7 +68,7 @@ export function LeadForm() {
   return (
     <form
       id="lead-form"
-      action={handleSubmit}
+      onSubmit={handleSubmit}
       className="bg-white p-6 md:p-8 rounded-lg shadow-md border border-[#5BC0EB]/20"
     >
       {error && <div className="mb-6 p-4 bg-red-50 text-red-600 rounded-md">{error}</div>}
