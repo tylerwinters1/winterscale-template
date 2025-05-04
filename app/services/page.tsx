@@ -36,7 +36,7 @@ export default function ServicesPage() {
               </div>
               <div className="p-6">
                 <div className="mb-6">
-                  <div className="text-3xl font-bold mb-1">$500</div>
+                  <div className="text-3xl font-bold mb-1">$297</div>
                   <p className="text-gray-500">One-time payment</p>
                 </div>
                 <ul className="space-y-3 mb-8">
@@ -97,7 +97,7 @@ export default function ServicesPage() {
               </div>
               <div className="p-6">
                 <div className="mb-6">
-                  <div className="text-3xl font-bold mb-1">$1,000</div>
+                  <div className="text-3xl font-bold mb-1">$597</div>
                   <p className="text-gray-500">One-time payment</p>
                 </div>
                 <ul className="space-y-3 mb-8">
