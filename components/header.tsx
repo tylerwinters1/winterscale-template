@@ -3,7 +3,7 @@ import { Menu } from "lucide-react"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-r from-white via-[#5BC0EB]/5 to-white">
+    <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
@@ -13,16 +13,13 @@ export function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex gap-6">
-          <Link href="#" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
+          <Link href="/services" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
             Services
           </Link>
-          <Link href="#" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
+          <Link href="/process" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
             Process
           </Link>
-          <Link href="#" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
-            Portfolio
-          </Link>
-          <Link href="#lead-form" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
+          <Link href="/#lead-form" className="text-sm font-medium hover:text-[#5BC0EB] transition-colors">
             Contact
           </Link>
         </nav>
@@ -34,7 +31,7 @@ export function Header() {
         </div>
         <div className="hidden md:block">
           <Link
-            href="#lead-form"
+            href="/#lead-form"
             className="inline-flex items-center justify-center rounded-md bg-[#4A2FBD] px-4 py-2 text-sm font-medium text-white hover:bg-[#4A2FBD]/90 transition-all"
           >
             Book a Call
